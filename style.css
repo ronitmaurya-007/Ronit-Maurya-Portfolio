@@ -806,6 +806,7 @@ body {
 .avatar-img img {
     position: absolute;
     width: 100%;
+    border-radius: 40%;
 }
 
 .home-social {
@@ -863,7 +864,7 @@ body {
 
 .about-img img{
     width: 100%;
-    border-radius: 15px;
+    border-radius: 500px;
 }
 
 .about-details{
@@ -1344,6 +1345,10 @@ body {
 /* =========================================
     Portfolio
  ========================================= */
+ h4 a {
+    color: white;
+ }
+ 
 .portfolio-tabs{
     display: flex;
     justify-content: center;
@@ -1428,6 +1433,13 @@ body {
 }
 
 .portfolio-card .card-info h4{
+    color: var(--color-02);
+    font-size: var(--medium-font-size);
+    font-weight: var(--font-medium);
+    margin-top: 5px;
+}
+
+.portfolio-card .card-info h4 a{
     color: var(--color-02);
     font-size: var(--medium-font-size);
     font-weight: var(--font-medium);
