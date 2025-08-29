@@ -156,7 +156,7 @@ var swiper = new Swiper(".ron-silent-swiper", {
 (function() {
    // https://dashboard.emailjs.com/admin/account
    emailjs.init({
-     publicKey: "zVpIHG_gJa3rZDamn",
+     publicKey: "RwK_TCma_ibn_WKA7",
    });
 })();
 
@@ -166,7 +166,7 @@ ronContactFormAlert = document.querySelector(".contact-form-alert");
 ronContactForm.addEventListener('submit', function(event) {
    event.preventDefault();
    // these IDs from the previous steps
-   emailjs.sendForm('service_jkex8v3', 'template_ppax7pl', '#ron-contact-form')
+   emailjs.sendForm('service_uvpyjx9', 'template_7ujssyc', '#ron-contact-form')
        .then(() => {
          //   console.log('SUCCESS!');
          ronContactFormAlert.innerHTML = "<span>Your message sent successfully!</span> <i class='ri-checkbox-circle-fill'></i>";
@@ -371,4 +371,5 @@ ScrollReveal().reveal('.pro-card, .about-buttons .ron-main-btn .resume-tabs .tab
 ScrollReveal().reveal('#resume .section-content', {delay: 700, origin: 'bottom' });
 ScrollReveal().reveal('.service-card, .portfolio-card, .contact-item, .contact-social-links li, .footer-menu .menu-item', {delay: 300, origin: 'bottom', interval: 300 });
 ScrollReveal().reveal('ron-client-swiper, .contact-form-body', {delay: 700, origin: 'right' });
+
 ScrollReveal().reveal('contact-info h3', {delay: 100, origin: 'bottom', interval: 300 });
